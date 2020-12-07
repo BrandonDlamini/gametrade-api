@@ -36,6 +36,6 @@ type Mutation{
     addGame( title: String!,dateReleased: String!, publisher: String!, tradeFor: String!): Game
 
 }
-`
+`;
 
-export {schema}
+export {schema};

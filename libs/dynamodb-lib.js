@@ -1,11 +1,11 @@
-import AWS from 'aws-sdk'
+import AWS from 'aws-sdk';
 
 
-AWS.config.update({ region: 'eu-central-1' })
+AWS.config.update({ region: 'eu-central-1' });
 
 export function call (action, params){
 
-    const dynamoDb = new AWS.DynamoDB.DocumentClient()
+    const dynamoDb = new AWS.DynamoDB.DocumentClient();
 
-    return dynamoDb[action](params).promise()
+    return dynamoDb[action](params).promise();
 }

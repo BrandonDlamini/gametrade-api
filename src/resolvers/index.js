@@ -1,5 +1,5 @@
-import {hello, viewGames} from './query'
-import {addGame} from './mutation'
+import {hello, viewGames} from './query';
+import {addGame} from './mutation';
 
 export const resolvers ={
     Query: {
@@ -10,4 +10,4 @@ export const resolvers ={
     Mutation: {
         addGame:(root, args, context) => addGame(args,context)
     }
-}
+};
