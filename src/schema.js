@@ -24,8 +24,8 @@ Query
 
 type Query {
     hello: String!
-    games: [Game]
-    publishers: [Publisher]
+    viewGames: [Game]
+    
 }
 
 """
