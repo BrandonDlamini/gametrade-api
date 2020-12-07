@@ -1,7 +1,7 @@
 import dynamodbLib from '../../libs/dynamodb-lib'
 import * as uuid from 'uuid'
 
-export const viewGames = async(args, context) =>{
+export const addGame = async(args, context) =>{
     
     const params = {
         TableName : process.env.tableName,

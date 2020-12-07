@@ -1,9 +1,11 @@
-import AWS from "aws-sdk"
+import AWS from 'aws-sdk'
 
-const client = new AWS.DynamoDB.DocumentClient()
 
-export default {
-    get: (params) => client.get(params).promise(),
-    put: (params) => client.put(params).promise(),
-    query: (params) => client.query(params).promise(),
+AWS.config.update({ region: 'eu-central-1' })
+
+export function call (action, params){
+
+    const dynamoDb = new AWS.DynamoDB.DocumentClient()
+
+    return dynamoDb[action](params).promise()
 }
