@@ -1,4 +1,4 @@
-import dynamodbLib from '../../libs/dynamodb-lib';
+import * as dynamodbLib from '../../libs/dynamodb-lib';
 
 export const hello = (args,context) => {
     return "Your GraphQl API is now live!!!";

@@ -36,7 +36,7 @@ provider:
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
         - dynamodb:DescribeTable
-      Resource: "arn:aws:dynamodb:eu-central-1:*:*"
+      Resource: "arn:aws:dynamodb:eu-central-1:130126517726:table/games"
 
 functions:
   graphql:
@@ -46,7 +46,9 @@ functions:
         path: graphql
         method: post
         cors: true
+        intergration: lambda-proxy
     - http:
         path: graphql
         method: get
         cors: true
+        intergration: lambda-proxy 
