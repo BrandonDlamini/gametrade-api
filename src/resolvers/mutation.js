@@ -11,7 +11,8 @@ export const addGame = async(args, context) => {
             dateReleased: args.dateReleased,
             id: uuid.v1(),
             publisher: args.publisher,
-            tradeFor: args.tradeFor
+            tradeFor: args.tradeFor,
+            phoneNumber: args.phoneNumber
         }
     };
 
@@ -22,7 +23,8 @@ export const addGame = async(args, context) => {
             dateReleased: args.dateReleased,
             id: uuid.v1(),
             publisher: args.publisher,
-            tradeFor: args.tradeFor
+            tradeFor: args.tradeFor,
+            phoneNumber: args.phoneNumber
         };
     }
 

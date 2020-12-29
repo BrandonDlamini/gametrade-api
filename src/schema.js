@@ -10,6 +10,7 @@ type Game {
     id: String!
     publisher: Publisher
     tradeFor: String!
+    phoneNumber: String!
 }
 
 type Publisher {
@@ -33,7 +34,7 @@ Mutation
 """
 
 type Mutation{
-    addGame( title: String!,dateReleased: String!, publisher: String!, tradeFor: String!): Game
+    addGame( title: String!,dateReleased: String!, publisher: String!, tradeFor: String!, phoneNumber: String!): Game
 
 }
 `;
